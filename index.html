@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Luizinho Rei do Box</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href=""><img class="logo" src="/Logo.png" alt="Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#about">Quem Somos</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="" class="btn-contato"><button>Atendimento</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.querySelectorAll('header ul li a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                let targetId = this.getAttribute('href').substring(1); 
+                let targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    <div class="banner">
+        <div class="container-banner">
+            <div>
+                <h1 class="text1">Vidros, Box e Esquadrias de<br>
+                    Alumínio</h1>
+            </div>
+
+            <div>
+                <h2 class="text2">Empresa especializada no segmento de vidros a mais de 20 anos<br>
+                    em Campo Grande e em todo Mato Grosso do Sul.
+                </h2>
+            </div>
+            <div>
+                <a href="" class="btn-banner"><button>Atendimento</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="about" id="about">
+        <div class="img-about">
+            <!-- <img src="/2021-09-14.jpg" alt=""> -->
+        </div>
+        <div class="">
+            <h2>Quem Somos</h2>
+            <h1>Luizinho Rei do Box</h1>
+            <p>A Vidraçaria <strong>Luizinho Rei do Box</strong> é uma empresa                especializada no segmento de vidros a mais de 10 anos
+                em Campo Grande.</p>
+
+            <!-- <div>
+                <a href="https://www.whatsapp.com/?lang=pt_BR" class="btn-banner"><button>Atendimento</button></a>
+            </div> -->
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h2>Serviços</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="/2024-07-12.jpg" alt="Box para banheiro">
+                <h3>Box para banheiro</h3>
+                <p>Blindex</p>
+                <button>Saiba Mais</button>
+            </div>
+            <div class="service">
+                <img src="/acrilico" alt="Box para banheiro">
+                <h3>Box para banheiro</h3>
+                <p>Acrílico</p>
+                <button>Saiba Mais</button>
+            </div>
+            <div class="service">
+                <img src="/985131653168212.jpg" alt="Janelas">
+                <h3>Janelas</h3>
+                <p>Blindex</p>
+                <button>Saiba Mais</button>
+            </div>
+            <div class="service">
+                <img src="/D_NQ_NP_987147-MLB54887075210_042023-O.webp" alt="Portas">
+                <h3>Portas</h3>
+                <p>Blindex</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+
+    </section>
+    <section class="galeria" id="galeria">
+        <h2>Galeria de Fotos</h2>
+        <div class="galeria_fotos">
+            <a href="/2024-07-12.jpg" class="galeria_itens"><img src="/2024-07-12.jpg" alt=""></a>
+            <a href="/20171222_144508.jpg" class="galeria_itens"><img src="/20171222_144508.jpg" alt=""></a>
+            <a href="/2024-07-25.png" class="galeria_itens"><img src="/2024-07-25.png" alt=""></a>
+            <a href="/985131653168212.jpg" class="galeria_itens"><img src="/985131653168212.jpg" alt=""></a>
+            <a href="/D_NQ_NP_987147-MLB54887075210_042023-O.webp" class="galeria_itens hidden"><img src="/D_NQ_NP_987147-MLB54887075210_042023-O.webp" alt=""></a>
+            <a href="/IMG_20210719_133043980_HDR.jpg" class="galeria_itens hidden"><img src="/IMG_20210719_133043980_HDR.jpg" alt=""></a>
+            <a href="/IMG-20210914-WA0002.jpg" class="galeria_itens hidden"><img src="/IMG-20210914-WA0002.jpg" alt=""></a>
+            <a href="/unnamed.jpg" class="galeria_itens hidden"><img src="/unnamed.jpg" alt=""></a>
+            <a href="/img1.jpg" class="galeria_itens hidden"><img src="/img1.jpg" alt=""></a>
+            <a href="/img2.jpg" class="galeria_itens hidden"><img src="/img2.jpg" alt=""></a>
+            <a href="/img3.jpg" class="galeria_itens hidden"><img src="/img3.jpg" alt=""></a>
+            <a href="/img4.jpg" class="galeria_itens hidden"><img src="/img4.jpg" alt=""></a>
+            <a href="/img5.jpg" class="galeria_itens hidden"><img src="/img5.jpg" alt=""></a>
+            <a href="/img7.jpg" class="galeria_itens hidden"><img src="/img7.jpg" alt=""></a>
+            <a href="/img8.jpg" class="galeria_itens hidden"><img src="/img8.jpg" alt=""></a>
+            <a href="/img9.jpg" class="galeria_itens hidden"><img src="/img9.jpg" alt=""></a>
+            <a href="/img10.jpg" class="galeria_itens hidden"><img src="/img10.jpg" alt=""></a>
+            <a href="/img11.jpg" class="galeria_itens hidden"><img src="/img11.jpg" alt=""></a>
+            <a href="/img12.jpg" class="galeria_itens hidden"><img src="/img12.jpg" alt=""></a>
+            <a href="/img13.jpg" class="galeria_itens hidden"><img src="/img13.jpg" alt=""></a>
+            <a href="/img14.jpg" class="galeria_itens hidden"><img src="/img14.jpg" alt=""></a>
+        </div>
+        <button class="vermais" onclick="" id="btnVerMais">Ver Mais</button>
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image">
+        </div>
+        <script>
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-image");
+            const closeBtn = document.querySelector(".close");
+            const galleryLinks = document.querySelectorAll(".galeria_itens");
+    
+            galleryLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault(); 
+                    modal.style.display = "block"; 
+                    modalImg.src = link.querySelector("img").src; 
+                });
+            });
+    
+            closeBtn.addEventListener("click", () => {
+                modal.style.display = "none"; 
+            });
+    
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    modal.style.display = "none"; 
+                }
+            });
+
+            document.getElementById("btnVerMais").addEventListener("click", function () {
+    let hiddenItems = document.querySelectorAll(".galeria_itens.hidden");
+
+    if (hiddenItems.length > 0) {
+        
+        hiddenItems.forEach(item => {
+            item.classList.remove("hidden");
+        });
+        this.textContent = "Ver Menos"; 
+    } else {
+        
+        let allItems = document.querySelectorAll(".galeria_itens");
+        allItems.forEach((item, index) => {
+            if (index >= 4) { 
+                item.classList.add("hidden");
+            }
+        });
+        this.textContent = "Ver Mais"; 
+    }
+});
+        </script>
+    </section>
+    <div class="form" id="contato">
+        <div class="form-box">
+            <h2 class="title-message">Fale conosco </h2>
+            <form action="" method="get">
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="subject" placeholder="Assunto">
+                <textarea name="message" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </div>
+    <a class="whatsapp-link" href="https://wa.me/" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+    <a id="link-topo" href="#">&#9650;</a>
+    <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const botao = document.getElementById("link-topo");
+
+    function toggleBotao() {
+        if (window.scrollY > window.innerHeight * 0.8) {
+            botao.style.display = "block"; 
+        } else {
+            botao.style.display = "none"; 
+        }
+    }
+
+
+    window.addEventListener("scroll", toggleBotao);
+    botao.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" 
+        });
+    });
+});
+    </script>
+</body>
+
+</html>
