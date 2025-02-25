@@ -206,11 +206,6 @@ transition: 0.5s ease;
     max-width: 500px;
 }
 
-/* .img-about img{
-max-width: 25vw;
-height: auto;
-} */
-
 .about h2{
     font-size: 2rem;
     color: #c8ae6b;
@@ -235,7 +230,6 @@ height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     z-index: 0; 
 }
 
@@ -262,6 +256,7 @@ height: auto;
 .services-container .service{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    width: 250px;
 }
 .services-container .service:hover{
     background-color: #fff;
@@ -296,8 +291,8 @@ height: auto;
 }
 
 .service img{
-    width: 28vh; 
-    height: 30vh; 
+    width: 250px; 
+    height: 250px; 
     object-fit: cover; 
     object-position: center;
     border-radius: 8px;
@@ -543,7 +538,7 @@ height: auto;
     background-color: #fff;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 980px){
 .hamburguer{
     display: block;
     z-index: 999;
@@ -569,30 +564,23 @@ margin-top: 15vw;
   }
 
   .services-container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Ativa a rolagem lateral */
+    justify-content: flex-start;
+    overflow-x: auto; 
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: 5px;
-    padding: 10px;
-    width: 100%;
-    max-width: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
-    white-space: nowrap; /* Garante a rolagem horizontal */
-    touch-action: pan-x; /* Habilita o gesto de arrastar no mobile */
+    margin-bottom: 50px;
 }
 
 .services-container::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem em Chrome e Safari */
+    display: none;
 }
 
-.service {
-    flex: 0 0 85%;
-    min-width: 85%;
-    scroll-snap-align: center;
+.service h3{
+    font-size: 1rem;
 }
-
+.service p{
+    font-size: 0.8rem;
+}
 }
